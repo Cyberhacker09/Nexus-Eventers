@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Eventers</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="nav_logo">Nexus Eventers</a>
+            <ul class="nav_items">
+                <li class="nav_item">
+                    <a href="#hero" class="nav_link">Home</a>
+                    <a href="#events" class="nav_link">Events</a>
+                    <a href="#about" class="nav_link">About</a>
+                    <a href="#blog" class="nav_link">Blog</a>
+                    <a href="#cart" class="nav_link">Cart (<span id="cart-count">0</span>)</a>
+                </li>
+            </ul>
+            <button class="button" id="form-open">Login</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Login Form -->
+        <section class="home">
+            <div class="form_container">
+                <i class="uil uil-times form_close"></i>
+                <!-- Login From -->
+                <div class="form login_form">
+                    <form action="#">
+                        <h2>Login</h2>
+                        <div class="input_box">
+                            <input type="email" placeholder="Enter your email" required />
+                            <i class="uil uil-envelope-alt email"></i>
+                        </div>
+                        <div class="input_box">
+                            <input type="password" placeholder="Enter your password" required />
+                            <i class="uil uil-lock password"></i>
+                            <i class="uil uil-eye-slash pw_hide"></i>
+                        </div>
+                        <div class="option_field">
+                            <span class="checkbox">
+                                <input type="checkbox" id="check" />
+                                <label for="check">Remember me</label>
+                            </span>
+                            <a href="#" class="forgot_pw">Forgot password?</a>
+                        </div>
+                        <button class="submit">Login Now</button>
+                        <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+                    </form>
+                </div>
+
+                <!-- Signup From -->
+                <div class="form signup_form">
+                    <form action="#">
+                        <h2>Signup</h2>
+                        <div class="input_box">
+                            <input type="email" placeholder="Enter your email" required />
+                            <i class="uil uil-envelope-alt email"></i>
+                        </div>
+                        <div class="input_box">
+                            <input type="password" placeholder="Create password" required />
+                            <i class="uil uil-lock password"></i>
+                            <i class="uil uil-eye-slash pw_hide"></i>
+                        </div>
+                        <div class="input_box">
+                            <input type="password" placeholder="Confirm password" required />
+                            <i class="uil uil-lock password"></i>
+                            <i class="uil uil-eye-slash pw_hide"></i>
+                        </div>
+                        <button class="button">Signup Now</button>
+                        <div class="login_signup">Already have an account? <a href="#" id="submit">Login</a></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hero Section -->
+        <section id="hero">
+            <h1>Welcome to Nexus Eventers</h1>
+            <p>Your one-stop solution for event management.</p>
+            <button id="explore-btn">Explore Events</button>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <div class="event" data-name="Tech Conference" data-price="100">
+                <h3>Tech Conference</h3>
+                <p>Price: $100</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="register-event">Register</button>
+            </div>
+            <div class="event" data-name="Music Festival" data-price="150">
+                <h3>Music Festival</h3>
+                <p>Price: $150</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="register-event">Register</button>
+            </div>
+            <div class="event" data-name="Marraige" data-price="190">
+                <h3>Marraige</h3>
+                <p>Price: $190</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="register-event">Register</button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Nexus Eventers is dedicated to providing the best event management solutions, including registration,
+                ticketing, and attendee management.</p>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog">
+            <h2>Latest Updates</h2>
+            <article>
+                <h3>How to Plan a Successful Event</h3>
+                <p>Planning an event can be challenging. Here are some tips...</p>
+                <!-- Add your blog content here -->
+            </article>
+        </section>
+
+        <!-- Cart Section -->
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <button id="checkout">Checkout</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nexus Eventers. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
